@@ -42,6 +42,18 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
+
+footer {
+    bottom: 0;
+	cursor: default;
+	height: 6em;
+	left: 0;
+	line-height: 8em;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
 ul {
     list-style: none;
     padding: 0;
