@@ -45,6 +45,8 @@ h3 {
 
 footer {
     color:white;
+    font-family: Arial;
+    font-weight: 100;
     bottom: 0;
 	cursor: default;
 	height: 6em;
