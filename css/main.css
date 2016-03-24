@@ -202,6 +202,10 @@ a {
 
 /* Mobile (Landscape) */
 @media screen and (max-width: 736px) {
+    #header {
+        padding-top: 60px;
+    }
+    
     @keyframes bg {
         0% {
             -moz-transform: translate3d(0,0,0);
@@ -217,9 +221,23 @@ a {
         }
     }
 
-    #bg {
+    #background {
         background-size: 300px auto;
         width: 900px;
+    }
+    
+    li:hover {
+        background-color: none;
+        transition: none;
+    }
+    
+    a:hover {
+        -webkit-transition: 500ms;
+        -moz-transition: 500ms;
+        transition: 500ms;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-decoration: none;
     }
 }
 
