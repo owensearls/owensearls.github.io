@@ -1,3 +1,4 @@
+/* Formating for entire page */
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: rgba(0, 0, 0, 0.9);
@@ -20,11 +21,11 @@ body {
     left: 0;
 }
 
-#avatar {
-    height: 180px;
-    border-radius: 100%;
-    border: 5px solid white;
-    margin-bottom: 40px;
+/* Formating for main header */
+#header {
+    padding-top: 200px;
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 #header h1 {
@@ -41,13 +42,7 @@ body {
     padding-bottom: 20px;
 }
 
-.content {
-    padding-top: 100px;
-    padding-bottom: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-
+/* Formating for footer */
 #footer {
     color:white;
     font-family: Arial;
@@ -62,6 +57,7 @@ body {
 	width: 100%;
 }
 
+/* Formating and animation for profile links */
 ul {
     list-style: none;
     padding: 0;
@@ -98,6 +94,7 @@ a {
     display: none;
 }
 
+/* Mobile formating, mostly for profile list */
 @media (max-width: 450px) {
     ul {
         text-align: center;
