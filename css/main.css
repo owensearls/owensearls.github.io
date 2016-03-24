@@ -1,3 +1,5 @@
+---
+---
 /* Formating for entire page */
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -12,15 +14,14 @@ body {
 
 /* Background */
 #background {
-    z-index: -999;
-    
-    background: #348cb2 url("../images/background2.jpg") bottom left;
+    background: #348cb2 url("../{{ site.front_img_path }}") bottom left;
     background-repeat: repeat-x;
     height: 100%;
     left: 0;
     opacity: 1;
     position: fixed;
     top: 0;
+    z-index: -999;
     
     /* Animation */
     -moz-animation: background 60s linear infinite;
