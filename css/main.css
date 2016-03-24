@@ -10,38 +10,52 @@ body {
     margin: 0;
 }
 
-#fullscreen {
+/* Background */
+#background {
     z-index: -999;
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
+    
+    background: #348cb2 url("../images/background2.jpg") bottom left;
+    background-repeat: repeat-x;
+    height: 100%;
+    left: 0;
+    opacity: 1;
     position: fixed;
     top: 0;
-    left: 0;
+    
+    background-size: 2250px auto;
+    width: 6750px;
+    
+    /* Animation */
+    -moz-animation: bg 60s linear infinite;
+    -webkit-animation: bg 60s linear infinite;
+    -ms-animation: bg 60s linear infinite;
+    animation: bg 60s linear infinite;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@keyframes bg {
+    0% {
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+    100% {
+        -moz-transform: translate3d(-2250px,0,0);
+        -webkit-transform: translate3d(-2250px,0,0);
+        -ms-transform: translate3d(-2250px,0,0);
+        transform: translate3d(-2250px,0,0);
+    }
 }
 
 /* Set up wrapper for whole page fade in */
-@-moz-keyframes wrapper {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@-webkit-keyframes wrapper {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@-ms-keyframes wrapper {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes wrapper {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 #wrapper {
     -moz-animation: wrapper 3s forwards;
     -webkit-animation: wrapper 3s forwards;
@@ -53,6 +67,15 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
+}
+
+@keyframes wrapper {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Formating for main header */

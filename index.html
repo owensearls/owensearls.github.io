@@ -16,13 +16,11 @@ permalink: /
     
     <body>
         <div id="wrapper">
-            {% if site.front_img %}
-            <img src="{{ site.front_img_path }}" id="fullscreen">
-            {% endif %}
-
-            {% if site.avatar %}
-                <img src="{{ site.avatar_img_path }}" id="avatar">
-            {% endif %}
+            <!--{% if site.front_img %}
+            <img src="{{ site.front_img_path }}" id="background">
+            {% endif %}-->
+            <div id="background"></div>
+            <div id="main">
             
             <!-- Header -->
             <header id="header">
@@ -51,6 +49,7 @@ permalink: /
             <footer id="footer">
                 <span class="copyright">&copy; Searls Omnimedia</span>
             </footer>
+            </div>
         </div>
     </body>
 </html>
