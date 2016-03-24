@@ -54,6 +54,7 @@ body {
 }
 
 #background {
+	/* Keep seperate for screen size override */
     background-size: auto;
     width: 6750px;
 }
