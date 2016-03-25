@@ -103,21 +103,6 @@ body {
     padding-bottom: 0px;
 }
 
-/* Formating for footer */
-#footer {
-    color:white;
-    font-family: Arial;
-    font-weight: lighter;
-    bottom: 0;
-	cursor: default;
-	height: 6em;
-	left: 0;
-	line-height: 8em;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-}
-
 /* Formating and animation for profile links */
 ul {
     list-style: none;
