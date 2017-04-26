@@ -1,27 +1,54 @@
----
-layout: default
----
-{% include background.html %}
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Title/Description-->
+  <title>Owen Searls</title>
+  <link rel="canonical" href="owen.searls.net">
+  <meta name="description" content="Computer science student at Tufts University">
+  <!--Metadata-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS Stylesheets-->
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/home.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+<div id="wrapper">
+<div id="background"></div>
             
 <!-- Header -->
-<header id="header">
-    <h1>{{ site.name }}</h1>
-    <h3>{{ site.description }}</h3>
-        <ul>
-            {% if site.github_username %}
-                <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
-            {% endif %}
+<header>
+  <h1>Owen Searls</h1>
+  <h3>Computer science and economics student at Tufts University</h3>
+  <ul>
+    <li>
+      <a class="fa fa-2x fa-github" href="https://github.com/owensearls">
+      <span class="description">GitHub</span></a>
+    </li>
 
-            {% if site.facebook_username %}
-                <li><a class="fa fa-2x fa-facebook" href="https://facebook.com/{{ site.facebook_username }}"><span class="description">Facebook</span></a></li>
-            {% endif %}
+    <li>
+      <a class="fa fa-2x fa-facebook" href="https://facebook.com/owenfsearls">
+      <span class="description">Facebook</span></a>
+    </li>
 
-            {% if site.linkedin_username %}
-                <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
-            {% endif %}
+    <li>
+      <a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/owensearls">
+      <span class="description">LinkedIn</span></a>
+    </li>
 
-            {% if site.email %}
-                <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">Email</span></a></li>
-            {% endif %}
-        </ul>
+    <li>
+      <a class="fa fa-2x fa-envelope" href="mailto:owen@searls.net">
+      <span class="description">Email</span></a>
+    </li>
+  </ul>
 </header>
+        
+<footer>
+    <span <i class="fa fa-creative-commons"></i>2016 Searls Omnimedia</span>
+</footer>
+
+</div>
+</body>
+</html>

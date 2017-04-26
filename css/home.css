@@ -1,0 +1,246 @@
+/* Formating for main header */
+header {
+  padding-top: 200px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 4em;
+  font-family: Arial;
+  margin: -10px 0;
+}
+
+header h3 {
+  color: white;
+  padding-bottom: 0px;
+}
+
+/* Formating and animation for profile links */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border-radius: 100%;
+  border: 2px solid white;
+  color: white;
+  margin: 8px;
+  display: inline-block;
+  list-style: none;
+  width: 65px;
+  height: 65px;
+}
+
+li:hover {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  transition: 500ms;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.description {
+  display: none;
+}
+
+/* Mobile (Landscape) */
+@media screen and (max-width: 736px) {
+  header {
+    padding-top: 30px;
+  }
+  
+  li:hover {
+    background-color: none;
+    transition: none;
+  }
+  
+  a:hover {
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    transition: 500ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  header {
+    padding-top: 60px;
+  }
+  
+  ul {
+    text-align: center;
+  }
+  
+  li {
+    border-radius: 0%;
+    border: none;
+    color: white;
+    margin: 8px;
+    display: block;
+    list-style: none;
+    margin: 10px 0px;
+    text-align: center;
+    height: auto;
+    width: auto;
+  }
+  
+  li:hover {
+    background-color: none;
+    transition: none;
+  }
+  
+  a {
+    text-align: justify;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+    width: 70%;
+  }
+  
+  a:hover {
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    transition: 500ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+  }
+  
+  .description {
+    display: inline-block;
+    color: white;
+    font-family: Arial;
+    margin-left: 40px;
+  }
+}
+
+#background {
+  background: #4B98B9 url("../images/background3.jpg") bottom left;
+  background-repeat: repeat-x;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+  
+  /* Animation */
+  -moz-animation: background 60s linear infinite;
+  -webkit-animation: background 60s linear infinite;
+  -ms-animation: background 60s linear infinite;
+  animation: background 60s linear infinite;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+@keyframes background {
+  0% {
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  100% {
+    -moz-transform: translate3d(-2250px,0,0);
+    -webkit-transform: translate3d(-2250px,0,0);
+    -ms-transform: translate3d(-2250px,0,0);
+    transform: translate3d(-2250px,0,0);
+  }
+}
+
+#background {
+  /* Keep seperate for screen size override */
+  background-size: auto;
+  width: 6750px;
+}
+  
+/* Screen size formating */
+/* Wide */
+@media screen and (max-width: 1680px) {
+  @keyframes background {
+    0% {
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+    100% {
+      -moz-transform: translate3d(-1500px,0,0);
+      -webkit-transform: translate3d(-1500px,0,0);
+      -ms-transform: translate3d(-1500px,0,0);
+      transform: translate3d(-1500px,0,0);
+    }
+  }
+#background {
+    background-size: 1500px auto;
+    width: 4500px;
+  }
+}
+
+/* Normal */
+@media screen and (max-width: 1280px) {
+  @keyframes background {
+    0% {
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+    100% {
+      -moz-transform: translate3d(-750px,0,0);
+      -webkit-transform: translate3d(-750px,0,0);
+      -ms-transform: translate3d(-750px,0,0);
+      transform: translate3d(-750px,0,0);
+    }
+  }
+  
+  #background {
+    background-size: 750px auto;
+    width: 2250px;
+  }
+}
+/* Mobile (Landscape) */
+@media screen and (max-width: 736px) {
+  @keyframes background {
+    0% {
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+    100% {
+      -moz-transform: translate3d(-300px,0,0);
+      -webkit-transform: translate3d(-300px,0,0);
+      -ms-transform: translate3d(-300px,0,0);
+      transform: translate3d(-300px,0,0);
+    }
+  }
+  #background {
+    background-size: 300px auto;
+    width: 900px;
+  }
+}
