@@ -59,12 +59,12 @@ a {
   header {
     padding-top: 30px;
   }
-  
+
   li:hover {
     background-color: none;
     transition: none;
   }
-  
+
   a:hover {
     transition: 500ms;
     background-color: rgba(0, 0, 0, 0.5);
@@ -78,11 +78,11 @@ a {
   header {
     padding-top: 60px;
   }
-  
+
   ul {
     text-align: center;
   }
-  
+
   li {
     border-radius: 0%;
     border: none;
@@ -95,12 +95,12 @@ a {
     height: auto;
     width: auto;
   }
-  
+
   li:hover {
     background-color: none;
     transition: none;
   }
-  
+
   a {
     text-align: justify;
     border: 2px solid white;
@@ -110,14 +110,14 @@ a {
     padding-left: 30px;
     width: 70%;
   }
-  
+
   a:hover {
     transition: 500ms;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-decoration: none;
   }
-  
+
   .description {
     display: inline-block;
     color: white;
@@ -135,7 +135,7 @@ a {
   position: fixed;
   top: 0;
   z-index: -999;
-  
+
   /* Animation */
   animation: background 60s linear infinite;
   backface-visibility: hidden;
@@ -156,7 +156,7 @@ a {
   background-size: auto;
   width: 6750px;
 }
-  
+
 /* Screen size formating */
 /* Wide */
 @media screen and (max-width: 1680px) {
@@ -184,7 +184,7 @@ a {
       transform: translate3d(-750px,0,0);
     }
   }
-  
+
   #background {
     background-size: 750px auto;
     width: 2250px;
